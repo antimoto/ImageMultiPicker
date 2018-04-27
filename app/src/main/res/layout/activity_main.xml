@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.office_n205.galleryandcameramodule.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/directorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            ></Spinner>
+
+        <com.example.office_n205.galleryandcameramodule.Gallery.GalleryGridViewLayout
+            android:id="@+id/gridImageViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:text="Hello World!" />
+
+        <Button
+            android:id="@+id/getCheckedFiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="get the checked file names"/>
+
+        <TextView
+            android:id="@+id/fileNames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#242424"
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
